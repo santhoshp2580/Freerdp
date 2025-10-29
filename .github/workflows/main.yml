@@ -21,6 +21,7 @@ run: |
 # Enable Remote Desktop and disable Network Level Authentication (if needed)
 
 Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' `
+Server\WinStations\RDP-Tcp' `
 
 -Name "fDenyTSConnections" -Value 0 -Force
 
